@@ -6,3 +6,6 @@ https://www.youtube.com/watch?v=hpLvXNASyTI&ab_channel=CodingDroplets
 
 
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=M.s09121249392" -p 1433:1433 --name sql1 -v C:/DockerVolumes/SqlData/data:/var/opt/mssql/data -v C:/DockerVolumes/SqlData/log:/var/opt/mssql/log -v C:/DockerVolumes/SqlData/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:latest
+
+
+https://www.youtube.com/watch?v=vJQ639rlun0&ab_channel=microsoftlab  //Reser win pass
