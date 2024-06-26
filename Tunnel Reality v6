@@ -1,0 +1,35 @@
+{
+  "tag": "Reality2",
+  "protocol": "vless",
+  "settings": {
+    "vnext": [
+      {
+        "address": "2a01:4f8:1c1b:e55::1",
+        "port": 41628,
+        "users": [
+          {
+            "id": "be94beb1-3f5a-4f3a-af42-da2b5189bf3e",
+            "flow": "",
+            "encryption": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "grpc",
+    "security": "reality",
+    "realitySettings": {
+      "publicKey": "tS0uCXhmXLZbgv66C-jl32JLBFbtO5adItnuXp9BV20",
+      "fingerprint": "chrome",
+      "serverName": "zula.ir",
+      "shortId": "07ed2725",
+      "spiderX": "/"
+    },
+    "grpcSettings": {
+      "serviceName": "",
+      "authority": "",
+      "multiMode": false
+    }
+  }
+}
