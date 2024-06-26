@@ -1,0 +1,26 @@
+{
+  "tag": "Tunnel-Tunnel1",
+  "protocol": "vmess",
+  "settings": {
+    "vnext": [
+      {
+        "address": "2a01:4f8:1c1b:e55::1",
+        "port": 31117,
+        "users": [
+          {
+            "id": "55ec504c-34e5-4ad5-c578-d0887181b5f4"
+          }
+        ]
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "tcp",
+    "security": "none",
+    "tcpSettings": {
+      "header": {
+        "type": "none"
+      }
+    }
+  }
+}
