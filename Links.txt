@@ -14,3 +14,6 @@ https://www.youtube.com/watch?v=vJQ639rlun0&ab_channel=microsoftlab  //Reset win
 https://stackoverflow.com/questions/76316402/docker-connect-to-tcp-port-1433-erratically-throws-error-1433-an-attempt-was-ma //Docker sql error port 1433
 
 docker exec -ti web1 ping web2 //Ping Containers
+
+
+http://95.38.132.66:4082/
