@@ -25,3 +25,7 @@ https://bulianglin.com/archives/cdn.html
 vless://9a0878af-3c2f-4487-95ff-9d3840602831@92.223.124.37:80?encryption=none&security=none&type=ws&host=azki.co&path=%2F#Gcore-azki-80
 
 vless://63f2e47b-d29a-4664-acc7-43872710c0b2@fastly.com:80?encryption=none&security=none&type=ws&host=bpi2.ir&path=ws%2F%3Fed%3D2048#Fastly-bpi2-80
+
+
+vless://63f2e47b-d29a-4664-acc7-43872710c0b2@151.101.2.216:80?encryption=none&security=none&type=ws&host=bpi2.ir&path=ws%2F%3Fed%3D2048#Fastly-bpi2-80
+
