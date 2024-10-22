@@ -29,3 +29,52 @@ vless://63f2e47b-d29a-4664-acc7-43872710c0b2@fastly.com:80?encryption=none&secur
 
 vless://63f2e47b-d29a-4664-acc7-43872710c0b2@151.101.2.216:80?encryption=none&security=none&type=ws&host=bpi2.ir&path=ws%2F%3Fed%3D2048#Fastly-bpi2-80
 
+
+
+
+
+
+
+(function() {
+    const SESSION_KEY = 'user_session_active_tabs'; // Key to store the active tabs count
+    const sessionTimeoutMs = 5 * 60 * 1000; // Example session timeout (5 minutes)
+    
+    // Check how many tabs are open for this session
+    function getActiveTabs() {
+        return parseInt(localStorage.getItem(SESSION_KEY)) || 0;
+    }
+
+    // Update the active tabs count in localStorage
+    function setActiveTabs(count) {
+        localStorage.setItem(SESSION_KEY, count);
+    }
+
+    // Increment the tab count when a new tab is opened
+    function incrementTabCount() {
+        let activeTabs = getActiveTabs();
+        setActiveTabs(activeTabs + 1);
+    }
+
+    // Decrement the tab count when a tab is closed
+    function decrementTabCount() {
+        let activeTabs = getActiveTabs();
+        if (activeTabs > 1) {
+            setActiveTabs(activeTabs - 1);
+        } else {
+            // If no other tabs are open, terminate the session
+            setActiveTabs(0);
+            terminateSession();  // Call the function to terminate the session
+        }
+    }
+
+    // Call this function to terminate the session
+    function terminateSession() {
+        console.log("Terminating session as all tabs are closed.");
+        // Perform session termination (e.g., log out, clear session data, API call)
+        // Example: fetch('/logout', { method: 'POST' });
+    }
+
+    // Add event listeners to manage the tab count
+    window.addEventListener('load', incrementTabCount);
+    window.addEventListener('beforeunload', decrementTabCount);
+})();
